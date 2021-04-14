@@ -7,8 +7,18 @@
 
 import UIKit
 
-class WDView: UIView {
+class WDBaseView: UIView {
 
+    /** 配置 */
+    func initializeDefault() {
+
+    }
+
+    /** 布局 */
+    func automaticLayout() {
+
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initializeDefault()
@@ -23,16 +33,6 @@ class WDView: UIView {
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    /** 配置 */
-    func initializeDefault() {
-
-    }
-
-    /** 布局 */
-    func automaticLayout() {
-
     }
 
 }

@@ -7,18 +7,7 @@
 
 import UIKit
 
-class WDCollectionViewCell: UICollectionViewCell {
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.initializeDefault()
-        self.setAutomaticLayout()
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
+class WDBaseCollectionViewCell: UICollectionViewCell {
 
     /** 配置 */
     func initializeDefault() {
@@ -28,6 +17,16 @@ class WDCollectionViewCell: UICollectionViewCell {
     /** 布局 */
     func setAutomaticLayout() {
 
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.initializeDefault()
+        self.setAutomaticLayout()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
 }

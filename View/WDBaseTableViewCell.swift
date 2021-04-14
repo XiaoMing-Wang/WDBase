@@ -7,17 +7,7 @@
 
 import UIKit
 
-class WDTableViewCell: UITableViewCell {
-
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        initializeDefault()
-        setAutomaticLayout()
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) h@objc as not been implemented")
-    }
+class WDBaseTableViewCell: UITableViewCell {
 
     /** 配置 */
     func initializeDefault() {
@@ -28,5 +18,16 @@ class WDTableViewCell: UITableViewCell {
     func setAutomaticLayout() {
 
     }
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        initializeDefault()
+        setAutomaticLayout()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) h@objc as not been implemented")
+    }
+
     
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WDBaseScrollViewController: WDViewController {
+class WDBaseScrollViewController: WDBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

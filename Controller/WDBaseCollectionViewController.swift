@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WDBaseCollectionViewController: WDViewController {
+class WDBaseCollectionViewController: WDBaseViewController {
 
     public var dataSource: [Any] = []
     

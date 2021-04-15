@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WDBaseTableViewController: WDViewController {
+class WDBaseTableViewController: WDBaseViewController {
 
     public var dataSource: [Any] = []
 

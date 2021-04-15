@@ -10,9 +10,10 @@ import UIKit
 class WDBaseCollectionViewController: WDBaseViewController {
 
     public var dataSource: [Any] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(collectionView)
     }
     
     /**< 行数 */

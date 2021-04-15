@@ -18,7 +18,7 @@ class WDBaseTableViewCell: UITableViewCell {
     func setAutomaticLayout() {
 
     }
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         initializeDefault()
@@ -29,5 +29,5 @@ class WDBaseTableViewCell: UITableViewCell {
         fatalError("init(coder:) h@objc as not been implemented")
     }
 
-    
+
 }

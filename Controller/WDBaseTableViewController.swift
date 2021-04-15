@@ -13,6 +13,8 @@ class WDBaseTableViewController: WDBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+                
+        isTableGroup() ? view.addSubview(tableViewGroup) : view.addSubview(tableView)
     }
 
     ///是否是分组类型
@@ -21,7 +23,7 @@ class WDBaseTableViewController: WDBaseViewController {
     }
 
     override func personalizedConfiguration() {
-        isTableGroup() ? view.addSubview(tableViewGroup) : view.addSubview(tableView)
+        
     }
 
     public lazy var tableView: UITableView = {
